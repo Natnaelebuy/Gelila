@@ -1,24 +1,31 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
 public class Lesson1 {
     
    public static void main(String[] args) {
-       int ages[] = new int [7];
-        
-       //ages[0] = 22;
-       //ages[1] = 24;
-       //ages[2] = 23;
-       //ages[3] = 26;
-       //ages[4] = 25;
-       //ages[5] = 22;
-       //ages[6] = 24;
+    HashMap<String, String> vaccination = new HashMap<>();
+    vaccination.put("Natnael", "12/07/1998");
+    vaccination.put("Yordanos", "06/20/1980");
+    vaccination.put("Yonatan", "11/07/2013");
+    vaccination.put("Eden", "06/18/2000");
+    vaccination.put("Hawaz", "03/02/1993");
+    vaccination.put("Mekdess", "10/13/1981");
+    vaccination.put("Gelila", "12/31/2018");
+    vaccination.put("Jose", "09/02/1990");
+    vaccination.put("Abele", "10/18/1998");
 
-       //System.out.println("Hawaz can get vaccinated pfizer-alpha because his age is " + ages[0]);
-       //System.out.println("Gelila age is " + ages[1]);
-       //System.out.println("Yonatan age is " + ages[2]);
-       //System.out.println("Yordano age is " + ages[3]);
-       //System.out.println("Mekdes age is " + ages[4]);
-       //System.out.println("Natnael age is " + ages[5]);
-       //System.out.println("Jose age is " + ages[6]);
+    Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter your name: ");
+            String name = scanner.nextLine();
+            if(vaccination.get(name) != null)
+                System.out.println(name + " your birth date is: " + vaccination.get(name));
+            else
+                System.out.println("vaccination not found");
 
+       
+    
+    
 
 
 
