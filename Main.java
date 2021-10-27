@@ -1,4 +1,4 @@
-@@ -0,0 +1,61 @@
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         
-        File file = new File("CKay - Love Nwantiti.wav");
+        File file = new File("Drake - No Friends In The Industry.wav");
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioStream);
